@@ -2,10 +2,20 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <% if (snailList.length !== 0) { %> <% for (let i = 0; i < snailList.length;
+    i++) {%>
+    <div>
+      <img src="<%= snailList[i].photoUrl %>" />
+      <p><%= snailList[i].dateTaken %></p>
+      <p><%= snailList[i].category %></p>
+      <p><%= snailList[i].description %></p>
+    </div>
+    <%} %> <%} else { %>
+    <li>There are no snail pics.</li>
+    <% } %>
   </body>
 </html>
