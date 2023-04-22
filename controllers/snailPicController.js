@@ -1,4 +1,5 @@
 const SnailPic = require("../models/SnailPic");
+const { body, validationResult } = require("express-validator");
 
 exports.snailList = async (req, res, next) => {
   try {
@@ -11,3 +12,33 @@ exports.snailList = async (req, res, next) => {
     next(err);
   }
 };
+
+exports.createSnailPic = [
+  body("photo").trim().escape(),
+  body("description").trim().escape(),
+
+  function (req, res, next) {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      res.json({
+        data: req.body,
+        errors: errors.array(),
+      });
+      return;
+    }
+
+    const { date, photo, category, description } = req.body;
+    const snail = new SnailPic({
+      date,
+      photo,
+      category,
+      description,
+    });
+    snail.save((err) => {
+      if (err) {
+        return next(err);
+      }
+      res.status(200).json({ msg: "snail pic added" });
+    });
+  },
+];

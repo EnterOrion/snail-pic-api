@@ -1,5 +1,6 @@
 var express = require("express");
 var router = express.Router();
+const passport = require("passport");
 
 const snailPicController = require("../controllers/snailPicController");
 const livePicController = require("../controllers/liveCategoryController");
@@ -28,5 +29,12 @@ router.post("/login", adminController.login);
 
 // logout - api/logout
 router.get("/logout", adminController.logout);
+
+// create new snail pic
+router.post(
+  "/create-pic",
+  passport.authenticate("jwt", { session: false }),
+  snailPicController.createSnailPic
+);
 
 module.exports = router;
