@@ -12,6 +12,7 @@ const passport = require("passport");
 const localStrategy = require("passport-local").Strategy;
 const JWTstrategy = require("passport-jwt").Strategy;
 const ExtractJWT = require("passport-jwt").ExtractJwt;
+const jwt = require("jsonwebtoken");
 
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
