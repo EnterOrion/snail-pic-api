@@ -101,7 +101,7 @@ async function createSnailPics() {
     ),
     snailPicCreate(
       "11/26/21",
-      "https://i.ibb.co/JBBM3tt/Snapchat-2131305559.jpg",
+      "https://i.ibb.co/zSJL3h1/Snapchat-2131305559-min.jpg",
       "2D",
       "A sign to warn drivers to slow down in a neighborhood."
     ),
@@ -149,43 +149,43 @@ async function createSnailPics() {
     ),
     snailPicCreate(
       "8/12/22",
-      "https://i.ibb.co/WPgxp2p/Snapchat-686642122.jpg",
+      "https://i.ibb.co/HF6x7qG/Snapchat-686642122-min.jpg",
       "2D",
       "Found on a REI gift card."
     ),
     snailPicCreate(
       "8/18/22",
-      "https://i.ibb.co/CWX42NF/Snapchat-1691068155.jpg",
+      "https://i.ibb.co/dGw9xN3/Snapchat-1691068155-min.jpg",
       "2D",
       "A children's book in a Colombian bookstore."
     ),
     snailPicCreate(
       "8/26/22",
-      "https://i.ibb.co/3c3k4sp/Snapchat-1964125867.jpg",
+      "https://i.ibb.co/Pj0MfpW/Snapchat-1964125867-min.jpg",
       "2D",
       "Cover for a whimsical kid's book."
     ),
     snailPicCreate(
       "10/5/22",
-      "https://i.ibb.co/G0YdGdz/Snapchat-1101225023.jpg",
+      "https://i.ibb.co/RhSdg7f/Snapchat-1101225023-min.jpg",
       "3D",
       "A goofy blue snail plush."
     ),
     snailPicCreate(
       "10/19/22",
-      "https://i.ibb.co/sPMYk3m/Snapchat-978309992.jpg",
+      "https://i.ibb.co/wSNd8z9/Snapchat-978309992-min.jpg",
       "2D",
       "A beautiful mural made by children."
     ),
     snailPicCreate(
       "10/19/22",
-      "https://i.ibb.co/f87xrRL/Snapchat-1936969567.jpg",
+      "https://i.ibb.co/LzdKSST/Snapchat-1936969567-min.jpg",
       "Live",
       "A snail vibin' in the dirt."
     ),
     snailPicCreate(
       "11/7/22",
-      "https://i.ibb.co/KbsWTWm/Snapchat-1688227472.jpg",
+      "https://i.ibb.co/XSvZP9w/Snapchat-1688227472-min.jpg",
       "2D",
       "Found in a bookstore in Buenos Aires."
     ),
@@ -197,115 +197,115 @@ async function createSnailPics() {
     ),
     snailPicCreate(
       "12/13/22",
-      "https://i.ibb.co/tbDFxNr/Snapchat-2019261360.jpg",
+      "https://i.ibb.co/MMP9hkk/Snapchat-2019261360-min.jpg",
       "2D",
       "Half-snail, half-barrel."
     ),
     snailPicCreate(
       "12/24/22",
-      "https://i.ibb.co/gSzmfTm/Snapchat-240860365.jpg",
+      "https://i.ibb.co/jDpsPHM/Snapchat-240860365-min.jpg",
       "2D",
       "A small snail found in Undertale."
     ),
     snailPicCreate(
       "1/25/23",
-      "https://i.ibb.co/9TVcqtr/Snapchat-1614993523.jpg",
+      "https://i.ibb.co/JQDQcy4/Snapchat-1614993523-min.jpg",
       "2D",
       "A wholesome graduation card."
     ),
     snailPicCreate(
       "2/8/23",
-      "https://i.ibb.co/MCykBs8/Snapchat-1168815200.jpg",
+      "https://i.ibb.co/3M9nsQ1/Snapchat-1168815200-min.jpg",
       "2D",
       "The best sticker you could have on your water bottle."
     ),
     snailPicCreate(
       "2/9/23",
-      "https://i.ibb.co/s1vQWrP/Snapchat-531294267.jpg",
+      "https://i.ibb.co/4YpLRNn/Snapchat-531294267-min.jpg",
       "2D",
       "What a cutie."
     ),
     snailPicCreate(
       "3/5/23",
-      "https://i.ibb.co/sQsWnjm/Snapchat-1615513230.jpg",
+      "https://i.ibb.co/pXwFSSp/Snapchat-1615513230-min.jpg",
       "2D",
       "This snail is a proud defender of LGBT rights."
     ),
     snailPicCreate(
       "3/5/23",
-      "https://i.ibb.co/NNywfcr/Snapchat-739700938.jpg",
+      "https://i.ibb.co/0VsvsY3/Snapchat-739700938-min.jpg",
       "3D",
       "A snail soap dispenser!!"
     ),
     snailPicCreate(
       "3/16/23",
-      "https://i.ibb.co/bKpNCBF/Snapchat-1361025156.jpg",
+      "https://i.ibb.co/gymPf2w/Snapchat-1361025156-min.jpg",
       "2D",
       "Found on the back of a car."
     ),
     snailPicCreate(
       "3/18/23",
-      "https://i.ibb.co/hC8FvCn/Snapchat-957852622.jpg",
+      "https://i.ibb.co/DL8Zk2w/Snapchat-957852622-min.jpg",
       "2D",
       "A museum info display about the ground snail."
     ),
     snailPicCreate(
       "3/18/23",
-      "https://i.ibb.co/x1P0nGK/Snapchat-1653524263.jpg",
+      "https://i.ibb.co/Z2hY1wX/Snapchat-1653524263-min.jpg",
       "3D",
       "Good things come in threes and snails are no exception."
     ),
     snailPicCreate(
       "3/18/23",
-      "https://i.ibb.co/Xyr5mkq/Snapchat-123193478.jpg",
+      "https://i.ibb.co/m9qW7pC/Snapchat-123193478-min.jpg",
       "2D",
       "A small medieval snail guardian."
     ),
     snailPicCreate(
       "3/19/23",
-      "https://i.ibb.co/z6Jzw8M/Snapchat-1888562826.jpg",
+      "https://i.ibb.co/2Mtsbfx/Snapchat-1888562826-min.jpg",
       "2D",
       "A fearsome one"
     ),
     snailPicCreate(
       "4/2/23",
-      "https://i.ibb.co/Z13v1pb/Snapchat-558707161.jpg",
+      "https://i.ibb.co/b1GCRL9/Snapchat-558707161-min.jpg",
       "2D",
       "Snail socks!"
     ),
     snailPicCreate(
       "4/2/23",
-      "https://i.ibb.co/61zVrFC/Snapchat-862220402.jpg",
+      "https://i.ibb.co/vxHH51Z/Snapchat-862220402-min.jpg",
       "2D",
       "Wholesome forest socks. Look cozy."
     ),
     snailPicCreate(
       "4/5/23",
-      "https://i.ibb.co/FJdr8Zv/Snapchat-1763020176.jpg",
+      "https://i.ibb.co/dWqJB15/Snapchat-1763020176-min.jpg",
       "2D",
       "The snail is good PR for a deal on a tattoo."
     ),
     snailPicCreate(
       "4/7/23",
-      "https://i.ibb.co/ncWxLnm/Snapchat-256911640.jpg",
+      "https://i.ibb.co/C9WwN6D/Snapchat-256911640-min.jpg",
       "2D",
       "I asked a stranger to take a pic of the back of his shirt."
     ),
     snailPicCreate(
       "4/14/23",
-      "https://i.ibb.co/9WcNhm5/Snapchat-1409840585.jpg",
+      "https://i.ibb.co/W544b82/Snapchat-1409840585-min.jpg",
       "2D",
       "That snail is zoomin' along."
     ),
     snailPicCreate(
       "4/14/23",
-      "https://i.ibb.co/y8mGcyw/Snapchat-1096491531.jpg",
+      "https://i.ibb.co/qsL1C4R/Snapchat-1096491531-min.jpg",
       "2D",
       "Found on a cover of a board game box."
     ),
     snailPicCreate(
       "4/15/23",
-      "https://i.ibb.co/SyssKHQ/Snapchat-1131180668.jpg",
+      "https://i.ibb.co/Qpx99H4/Snapchat-1131180668-min.jpg",
       "2D",
       "A beautiful snail sticker. And two snails!!"
     ),
