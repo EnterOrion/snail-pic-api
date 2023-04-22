@@ -6,6 +6,12 @@ var logger = require("morgan");
 const cors = require("cors");
 const compression = require("compression");
 const helmet = require("helmet");
+const Admin = require("./models/Admin");
+
+const passport = require("passport");
+const localStrategy = require("passport-local").Strategy;
+const JWTstrategy = require("passport-jwt").Strategy;
+const ExtractJWT = require("passport-jwt").ExtractJwt;
 
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
@@ -37,6 +43,73 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
+app.use(passport.initialize());
+app.use(passport.session());
+
+// Passport auth
+passport.use(
+  "login",
+  new localStrategy(
+    {
+      usernameField: "username",
+      passwordField: "password",
+    },
+    async (username, password, done) => {
+      try {
+        const user = await Admin.findOne({ username });
+
+        if (!user) {
+          return done(null, false, { message: "User not found" });
+        }
+
+        const validate = await user.isValidPassword(password);
+
+        if (!validate) {
+          return done(null, false, { message: "Wrong Password" });
+        }
+
+        return done(null, user, { message: "Logged in Successfully" });
+      } catch (error) {
+        return done(error);
+      }
+    }
+  )
+);
+
+passport.use(
+  new JWTstrategy(
+    {
+      secretOrKey: process.env.TOKEN,
+      jwtFromRequest: ExtractJWT.fromAuthHeaderAsBearerToken(),
+    },
+    async (token, done) => {
+      try {
+        return done(null, token.user);
+      } catch (error) {
+        done(error);
+      }
+    }
+  )
+);
+
+passport.use(
+  "signup",
+  new localStrategy(
+    {
+      usernameField: "username",
+      passwordField: "password",
+    },
+    async (username, password, done) => {
+      try {
+        const user = await Admin.create({ username, password });
+
+        return done(null, user);
+      } catch (error) {
+        done(error);
+      }
+    }
+  )
+);
 
 // Set up rate limiter: maximum of twenty requests per minute
 const RateLimit = require("express-rate-limit");
