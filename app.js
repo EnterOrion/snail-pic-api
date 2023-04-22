@@ -93,25 +93,6 @@ passport.use(
   )
 );
 
-passport.use(
-  "signup",
-  new localStrategy(
-    {
-      usernameField: "username",
-      passwordField: "password",
-    },
-    async (username, password, done) => {
-      try {
-        const user = await Admin.create({ username, password });
-
-        return done(null, user);
-      } catch (error) {
-        done(error);
-      }
-    }
-  )
-);
-
 // Set up rate limiter: maximum of twenty requests per minute
 const RateLimit = require("express-rate-limit");
 const limiter = RateLimit({

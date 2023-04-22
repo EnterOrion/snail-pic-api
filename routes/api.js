@@ -21,9 +21,6 @@ router.get("/snail-pics/live", livePicController.liveSnailList);
 router.get("/snail-pics/3D", statuePicController.statueSnailList);
 router.get("/snail-pics/2D", drawnPicController.drawnSnailList);
 
-// sign-up - api/sign-up
-router.post("/sign-up", adminController.signup);
-
 // login - api/login
 router.post("/login", adminController.login);
 
