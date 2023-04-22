@@ -87,7 +87,6 @@ passport.use(
       try {
         return done(null, token.user);
       } catch (error) {
-        console.log("key problem");
         done(error);
       }
     }

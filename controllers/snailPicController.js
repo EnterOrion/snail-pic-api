@@ -16,6 +16,7 @@ exports.snailList = async (req, res, next) => {
 exports.createSnailPic = [
   body("photo").trim().escape(),
   body("description").trim().escape(),
+  body("date").toDate(),
 
   function (req, res, next) {
     const errors = validationResult(req);
@@ -27,10 +28,10 @@ exports.createSnailPic = [
       return;
     }
 
-    const { date, photo, category, description } = req.body;
+    const { dateTaken, photoUrl, category, description } = req.body;
     const snail = new SnailPic({
-      date,
-      photo,
+      dateTaken,
+      photoUrl,
       category,
       description,
     });
