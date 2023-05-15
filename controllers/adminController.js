@@ -1,17 +1,9 @@
-const Admin = require("../models/Admin");
 const passport = require("passport");
 const jwt = require("jsonwebtoken");
-const { body, validationResult } = require("express-validator");
 
 exports.login = async (req, res, next) => {
   passport.authenticate("login", async (err, user, info) => {
     try {
-      // if (err || !user) {
-      //   const error = new Error("An error occurred.");
-
-      //   return next(error);
-      // }
-
       if (err) {
         const error = new Error("An server error occurred.");
 
@@ -30,7 +22,7 @@ exports.login = async (req, res, next) => {
         const token = jwt.sign({ user: body }, process.env.TOKEN, {
           expiresIn: "1d",
         });
-
+        // If login is successful, returns an auth token with expiration of one day
         return res.json({ token });
       });
     } catch (error) {
@@ -40,5 +32,6 @@ exports.login = async (req, res, next) => {
 };
 
 exports.logout = function (req, res) {
+  // Handling the session is done through the client and through local storage
   res.redirect("/");
 };

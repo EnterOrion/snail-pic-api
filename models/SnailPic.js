@@ -9,4 +9,5 @@ const SnailPicSchema = new Schema({
   description: { type: String, maxLength: 150, required: true },
 });
 
+// Export model
 module.exports = mongoose.model("SnailPic", SnailPicSchema);
